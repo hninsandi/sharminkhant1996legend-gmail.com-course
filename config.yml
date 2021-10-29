@@ -1,0 +1,16 @@
+title: sharminkhant1996legend@gmail.com
+description: sharminkhant1996legend@gmail.com
+template:
+  repo: sharminkhant1996legend@gmail.com-template
+  name: sharminkhant1996legend@gmail.com
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
